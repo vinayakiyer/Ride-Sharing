@@ -39,6 +39,7 @@ outfol = home + 'analysis/output/model_analysis'
 #------------------------------#
 # Function: export text to file
 def write_tex(filename,code):
+    ''' Writes a Latex file given a filename and the underlying table code'''
     text_file = open(filename, "w")
     n = text_file.write(code)
     text_file.close()
